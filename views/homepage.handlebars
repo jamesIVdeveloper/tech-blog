@@ -1,12 +1,7 @@
 <ol>
   {{#each blogs as |blog|}}
     <li>
-      <article class="blog">
-        <h1 class="title">{{blog.title}}</h1>
-        <p class="content">{{blog.blog_content}}</p>
-        <p class="date">{{blog.created_at}} by {{blog.user.username}}</p>
-        <a href="/blog/{{id}}">{{blog.comments.length}} comment(s)</a>
-      </article>
+      {{> blog-info blog }}
     </li>
   {{/each}}
 </ol>
