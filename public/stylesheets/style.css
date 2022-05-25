@@ -1,4 +1,73 @@
 * {
   box-sizing: border-box;
+}
+
+body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: lightgray;
+  align-items: center;
+}
+
+/* login */
+
+.login-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20%;
+  padding: 10px;
+  line-height: 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.login-form input {
+  height: 25px;
+}
+
+.login-form button {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.signup-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20%;
+  padding: 10px;
+  line-height: 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+/* homepage */
+main {
+  margin: 0 3%;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* footer */
+
+footer {
+  padding: 5px;
+  background-color: lightgray;
+  display: flex;
 }
