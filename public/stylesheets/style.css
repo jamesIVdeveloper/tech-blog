@@ -3,7 +3,7 @@
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   position: relative;
   margin: 0;
   padding: 0;
@@ -109,6 +109,31 @@ main {
 ol {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+ol li {
+  width: 300px;
+  margin: 5px 0;
+}
+
+.blog {
+  border: 3px solid #40a7bf;
+  border-radius: 5px;
+  padding: 0 5px 5px 5px;
+  background-color: #a95680;
+  color: white;
+}
+
+.blog a {
+  color: white;
+}
+
+.blog a:hover {
+  color: #40a7bf;
 }
 
 /* footer */
@@ -122,4 +147,5 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
+  height: 30px;
 }
