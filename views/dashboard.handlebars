@@ -1,27 +1,30 @@
 <section>
-  <h2>Create New Blog</h2>
+  <h2 class="dashboard-title">Create New Blog</h2>
 
   <form class="new-blog-form">
-    <div>
+    <div class="new-blog">
       <label for="blog-title">Title</label>
-      <input type="text" id="blog-title" name="blog-title" />
+      <input type="text" id="blog-title" name="blog-title" class="title-input" placeholder="title" />
     </div>
-    <div>
+    <div class="new-blog">
       <label for="blog-content">Blog</label>
-      <input id="blog-content" name="blog-content" />
+      <textarea id="blog-content" name="blog-content" class="blog-input" rows="5" placeholder="...blog content"></textarea>
+      {{!-- <input type="text" id="blog-content" name="blog-content" class="blog-input" maxlength="500" size="5" /> --}}
     </div>
-    <button type="submit" class="btn">Create</button>
+    <div class="create-blog">
+      <button type="submit" class="create-btn">Create</button>
+    </div>
   </form>
 </section>
 
 {{#if blogs.length}}
 <section>
-    <h2>Your Blogs</h2>
+    <h2 class="dashboard-title">Your Blogs</h2>
     <ol>
         {{#each blogs as |blog|}}
         <li>
             {{> blog-info blog}}
-            <a href="/dashboard/edit/{{blog.id}}" class="edit-blog">Edit Blog</a>
+            <a href="/dashboard/edit/{{blog.id}}" class="edit-blog-btn">Edit Blog</a>
         </li>
         {{/each}}
     </ol>

@@ -1,7 +1,9 @@
 <article class="blog">
-  <h1 class="title">{{title}}</h1>
+  <a href="/blog/{{id}}">
+    <h1 class="title">{{title}}</h1>
+  </a>
+  <p class="date">By {{user.username}} on {{format_date created_at}}</p>
   <p class="content">{{content}}</p>
-  <p class="date">{{format_date created_at}} by {{user.username}}</p>
   <a href="/blog/{{id}}">{{comments.length}}
     {{format_plural "comment" comments.length}}</a>
 </article>

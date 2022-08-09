@@ -1,13 +1,14 @@
-{{> blog-info blog }}
+<div class="single-blog-page">
+  {{> blog-info blog }}
 
 {{#if loggedIn}}
   <form class="comment-form">
-    <div>
-      <textarea name="comment-body"></textarea>
+    <div class="comment-text-area">
+      <textarea name="comment-body" class="comment-body" placeholder="comment text" rows="3"></textarea>
     </div>
 
     <div>
-      <button type="submit">Add Comment</button>
+      <button type="submit" class="comment-btn">Add Comment</button>
     </div>
   </form>
 {{/if}}
@@ -17,3 +18,4 @@
 {{#if loggedIn}}
   <script src="/javascript/comment.js"></script>
 {{/if}}
+</div>
