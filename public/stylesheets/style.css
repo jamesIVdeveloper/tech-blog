@@ -9,7 +9,12 @@
 }
 
 body {
+<<<<<<< HEAD
   min-height: 100%;
+=======
+  height: 100%;
+  position: relative;
+>>>>>>> parent of f3b53fd (style blogs page and add blogs route to nav bar)
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -150,6 +155,7 @@ header a:hover {
 ol {
   list-style: none;
   padding-left: 0;
+<<<<<<< HEAD
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +199,8 @@ ol li {
 
 .blog a:hover {
   text-decoration: underline;
+=======
+>>>>>>> parent of f3b53fd (style blogs page and add blogs route to nav bar)
 }
 
 /* new blog form */
@@ -200,6 +208,7 @@ ol li {
 .new-blog-form {
   background-color: var(--secondary-color);
   color: white;
+<<<<<<< HEAD
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
@@ -327,4 +336,11 @@ ol li {
   width: 75%;
   padding: 5px;
   margin: 5px 0;
+=======
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+>>>>>>> parent of f3b53fd (style blogs page and add blogs route to nav bar)
 }
