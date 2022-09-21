@@ -1,3 +1,4 @@
+{{#if blogs.length}}
 <ol>
   {{#each blogs as |blog|}}
     <li>
@@ -5,3 +6,6 @@
     </li>
   {{/each}}
 </ol>
+{{else}}
+<h2>No blogs yet!</h2>
+{{/if}}
