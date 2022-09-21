@@ -1,15 +1,15 @@
 <article class="edit-blog-content">
   <a href="/dashboard">&larr; Back to dashboard</a>
-  <h2>Edit Blog</h2>
+  <h2 class="edit-page-title">Edit Blog</h2>
   <form class="edit-blog-form">
     <div>
       <div class="edit-blog">
         <label for="blog-title">Title</label>
-        <input name="blog-title" type="text" value="{{blog.title}}" />
+        <input name="blog-title" type="text" class="edit-blog-title" value="{{blog.title}}" />
       </div>
       <div class="edit-blog">
         <label for="blog-content">Blog</label>
-        <input name="blog-content" type="text" value="{{blog.content}}" />
+        <input name="blog-content" type="text" class="edit-blog-content-input" value="{{blog.content}}" />
       </div>   
     </div>
     <div>
@@ -23,10 +23,10 @@
 
 <form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea name="comment-body" class="comment-body"></textarea>
   </div>
   <div>
-    <button type="submit">Add Comment</button>
+    <button type="submit" class="comment-btn">Add Comment</button>
   </div>
 </form>
 
