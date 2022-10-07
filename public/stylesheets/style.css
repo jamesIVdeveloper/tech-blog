@@ -112,6 +112,7 @@ header a:hover {
 }
 
 .form-break {
+  color: white;
   text-align: center;
 }
 
@@ -172,6 +173,10 @@ li {
   background-color: #000000;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--compliment-color);
+}
+
+.no-blogs {
+  color: white;
 }
 
 /* blog */

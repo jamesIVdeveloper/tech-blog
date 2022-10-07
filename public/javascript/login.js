@@ -19,7 +19,7 @@ async function signupFormHandler(event) {
     if (response.ok) {
       console.log("success");
     } else {
-      alert(response.statusText);
+      console.log(response.statusText);
     }
   }
 }
