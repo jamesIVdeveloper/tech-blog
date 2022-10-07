@@ -18,8 +18,8 @@ async function signupFormHandler(event) {
 
     if (response.ok) {
       console.log("success");
-    } else {
       document.location.replace("/dashboard");
+    } else {
       console.log(response.statusText);
     }
   }
